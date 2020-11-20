@@ -11,14 +11,14 @@ div{
 
 ul{
     list-style-type: none;
-    background-color: grey;
+    background-color: black;
     padding: 0;
     overflow: hidden;
     position:sticky;
 }
 
 .menu{
-    background-color: black;
+    background-color: rgba(64,64,64);
     display: block;
     width: 20%;
     text-align: center;
@@ -178,11 +178,11 @@ html, body {
 }
 
 body{
-  background-color: black;
+  background-color: #404040;
 }
 
 #tartalom{
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(64,64,64);
 }
 
 ol{

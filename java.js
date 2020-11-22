@@ -74,3 +74,77 @@ function checkResults()
   document.getElementById("Result").innerHTML="Pontszám: " + points + "/" + Quiz.length;
   return [points, output];
 }
+
+function Vegeredmeny()
+{
+  var szobelipontok=parseInt(document.getElementById("Szobeli").value)
+  var irasbelipontok=parseInt(document.getElementById("Szobeli").value)
+  var kijovetel= "";
+  if  (szobelipontok > 30 && irasbelipontok>120)
+  {
+    return
+  }
+
+  if  (szobelipontok < 4 || irasbelipontok < 15 || szobelipontok+irasbelipontok < 38)
+  {
+    document.getElementById("vegeredmeny").innerHTML="Elégtelen(1)"
+    console.log("Rossz lehet")
+  }
+
+  if  (irasbelipontok > 30 && szobelipontok > 7)
+  {
+    document.getElementById("vegeredmeny").innerHTML="Elégséges(2)"
+  }
+
+  if  (irasbelipontok > 48 && szobelipontok > 12)
+  {
+    document.getElementById("vegeredmeny").innerHTML="Elégséges(3)"
+  }
+
+  if  (irasbelipontok > 72 && szobelipontok > 18)
+  {
+    document.getElementById("vegeredmeny").innerHTML="Elégséges(4)"
+  }
+
+  if  (irasbelipontok > 96 && szobelipontok > 24)
+  {
+    document.getElementById("vegeredmeny").innerHTML="Elégséges(5)"
+  }
+}
+
+function FelsoVegeredmeny()
+{
+  var szobelipontok=parseInt(document.getElementById("Szobeli").value)
+  var irasbelipontok=parseInt(document.getElementById("Szobeli").value)
+  var kijovetel= "";
+  if  (szobelipontok > 30 && irasbelipontok>120)
+  {
+    return
+  }
+
+  if  (szobelipontok < 4 || irasbelipontok < 15 || szobelipontok+irasbelipontok < 38)
+  {
+    document.getElementById("felsovegeredmeny").innerHTML="Elégtelen(1)"
+    console.log("Rossz lehet")
+  }
+
+  if  (irasbelipontok > 30 && szobelipontok > 7)
+  {
+    document.getElementById("felsovegeredmeny").innerHTML="Elégséges(2)"
+  }
+
+  if  (irasbelipontok > 39 && szobelipontok > 9)
+  {
+    document.getElementById("felsovegeredmeny").innerHTML="Elégséges(3)"
+  }
+
+  if  (irasbelipontok > 56 && szobelipontok > 14)
+  {
+    document.getElementById("felsovegeredmeny").innerHTML="Elégséges(4)"
+  }
+
+  if  (irasbelipontok > 72 && szobelipontok > 18)
+  {
+    document.getElementById("felsovegeredmeny").innerHTML="Elégséges(5)"
+  }
+}
